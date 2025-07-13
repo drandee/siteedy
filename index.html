@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Звукорежиссер — Сведение и мастеринг</title>
+  <title>mixed by edy</title>
+  <link rel="icon" type="image/jpeg" href="img/mixedbyedy.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -74,7 +75,6 @@ function moveCarousel(dir) {
   carouselIndex += dir;
   if (carouselIndex < 0) carouselIndex = 0;
   if (carouselIndex > maxIndex) carouselIndex = maxIndex;
-  // Для desktop: ширина одного слайда = ширина карусели / 3
   const carousel = document.querySelector('.carousel');
   const slideWidth = window.innerWidth < 900 ? document.querySelector('.carousel-slide').offsetWidth : carousel.offsetWidth / 3;
   document.querySelector('.carousel-track').style.transform = `translateX(-${carouselIndex * slideWidth}px)`;
